@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>WorldTech · Paquetes</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #2b2b2b;
+    display: flex; justify-content: center; padding: 30px;
+    font-family: "Segoe UI", Arial, sans-serif;
+  }
+
+  /* ===== Screenshot THIS card (portrait, WhatsApp-friendly) ===== */
+  .sheet {
+    width: 720px;
+    background: linear-gradient(160deg, #ffffff 0%, #e9f1ff 60%, #dbe8ff 100%);
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    padding: 46px 44px 40px;
+    color: #001134;
+  }
+  /* faint globe accent in the corner */
+  .sheet__globe {
+    position: absolute;
+    right: -120px; top: 40px;
+    height: 360px; opacity: 0.10;
+  }
+
+  .head { text-align: center; position: relative; }
+  .head img.logo { height: 46px; }
+  .eyebrow {
+    letter-spacing: 3px; font-size: 12px; font-weight: 700;
+    color: #0159fb; margin-top: 10px;
+  }
+  .title { font-size: 40px; font-weight: 800; margin-top: 6px; }
+  .title span { color: #0159fb; }
+  .sub { color: #51607a; font-size: 15px; margin-top: 4px; }
+
+  .cards { margin-top: 30px; display: flex; flex-direction: column; gap: 16px; position: relative; }
+
+  .card {
+    background: #fff;
+    border: 1px solid #dce6f7;
+    border-radius: 14px;
+    padding: 22px 24px;
+    display: flex; align-items: flex-start; gap: 20px;
+    box-shadow: 0 6px 16px rgba(0,17,52,0.06);
+  }
+  .card--feat { border: 2px solid #0159fb; box-shadow: 0 10px 26px rgba(1,89,251,0.18); }
+
+  .card__left { flex: none; width: 165px; }
+  .card__name { font-size: 20px; font-weight: 800; color: #001134; }
+  .card__price { font-size: 32px; font-weight: 800; color: #0159fb; line-height: 1.1; margin-top: 2px; }
+  .card__maint { font-size: 12px; color: #51607a; margin-top: 4px; font-weight: 600; }
+  .card__feat-tag {
+    display: inline-block; margin-top: 8px;
+    font-size: 11px; font-weight: 700; color: #fff; background: #0159fb;
+    padding: 3px 10px; border-radius: 20px;
+  }
+  .card__list { list-style: none; font-size: 13.5px; color: #2a3850; }
+  .card__list li { padding: 4px 0 4px 22px; position: relative; }
+  .card__list li::before { content: "✓"; position: absolute; left: 0; color: #1eaf6b; font-weight: 700; }
+
+  .foot {
+    margin-top: 28px; text-align: center; position: relative;
+    border-top: 1px dashed #c5d4ee; padding-top: 20px;
+  }
+  .foot .note { font-size: 13px; color: #51607a; }
+  .foot .contact {
+    margin-top: 12px; font-size: 15px; font-weight: 700; color: #001134;
+  }
+  .foot .contact span { color: #0159fb; }
+  .ig-sheet { width: 19px; height: 19px; vertical-align: -4px; margin-right: 6px; }
+  .foot .free {
+    display: inline-block; margin-top: 14px;
+    background: linear-gradient(135deg, #0159fb, #001134); color: #fff;
+    font-weight: 700; padding: 10px 26px; border-radius: 30px; font-size: 15px;
+  }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <img src="globe.png" class="sheet__globe" alt="" />
+
+    <div class="head">
+      <img src="logo.png" class="logo" alt="WorldTech" />
+      <p class="eyebrow">DISEÑO WEB PARA TU NEGOCIO</p>
+      <h1 class="title">Nuestros <span>Paquetes</span></h1>
+      <p class="sub">Lleva tu negocio al mundo digital</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="card__left">
+          <div class="card__name">Básico</div>
+          <div class="card__price">$200</div>
+          <div class="card__maint">Mant. $25/mes</div>
+        </div>
+        <ul class="card__list">
+          <li>Página de 1 sección (landing)</li>
+          <li>Adaptada a celulares</li>
+          <li>Botón de WhatsApp y llamada</li>
+          <li>Enlaces a redes sociales</li>
+          <li>Dominio + hosting (1er año)</li>
+          <li>3 revisiones incluidas</li>
+        </ul>
+      </div>
+
+      <div class="card card--feat">
+        <div class="card__left">
+          <div class="card__name">Profesional</div>
+          <div class="card__price">$400</div>
+          <div class="card__maint">Mant. $45/mes</div>
+          <span class="card__feat-tag">Más popular</span>
+        </div>
+        <ul class="card__list">
+          <li>Todo lo del plan Básico</li>
+          <li>3 a 5 páginas</li>
+          <li>Formulario de contacto</li>
+          <li>Galería de fotos</li>
+          <li>Ubicación en Google Maps</li>
+          <li>SEO básico (Google)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card__left">
+          <div class="card__name">Premium</div>
+          <div class="card__price">Desde $800</div>
+          <div class="card__maint">Mant. $80/mes</div>
+        </div>
+        <ul class="card__list">
+          <li>Todo lo del plan Profesional</li>
+          <li>Funciones interactivas (React/jQuery)</li>
+          <li>Integración con reservas/catálogo de terceros</li>
+          <li>Datos en vivo / APIs</li>
+          <li>Entrega prioritaria</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="foot">
+      <p class="note">Incluye 3 revisiones y dominio + hosting del 1er año (luego renovación anual a cargo del cliente) · Mantenimiento mensual opcional según el paquete · 50% para apartar · Zelle · PayPal · Binance</p>
+      <p class="contact">✉️ <span>worldtech.web@outlook.com</span></p>
+      <p class="contact"><svg class="ig-sheet" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="igg" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#f09433"/><stop offset=".5" stop-color="#dc2743"/><stop offset="1" stop-color="#bc1888"/></linearGradient></defs><path fill="url(#igg)" d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.38C1.35 2.68.93 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.12.66.66 1.33 1.08 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.86 5.86 0 0 0 2.12-1.38 5.86 5.86 0 0 0 1.38-2.12c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.86 5.86 0 0 0-1.38-2.12A5.86 5.86 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0m0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84M12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4m6.41-10.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44"/></svg><span>@wworldtech</span></p>
+      <span class="free">Cotización GRATIS</span>
+    </div>
+  </div>
+</body>
+</html>
