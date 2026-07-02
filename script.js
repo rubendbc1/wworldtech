@@ -96,6 +96,20 @@ function setLang(lang) {
 // Apply the saved language before the page is shown.
 setLang(window.currentLang);
 
+document.querySelectorAll("[data-email-link], [data-email-text]").forEach(function (element) {
+  const user = element.getAttribute("data-user");
+  const domain = element.getAttribute("data-domain");
+  if (!user || !domain) return;
+
+  const email = user + "@" + domain;
+  if (element.matches("[data-email-link]")) {
+    element.href = "mailto:" + email;
+    element.textContent = "✉️ " + email;
+  } else {
+    element.textContent = email;
+  }
+});
+
 // ===================== WorldTech — jQuery =====================
 // "Write less, do more" — same behavior, less code.
 
